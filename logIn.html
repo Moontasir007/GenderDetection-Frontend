@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="logIn.css">
+    <!-- ---------------
+        font awesome
+    ---------------- -->
+    <script src="https://kit.fontawesome.com/2dc88ddb59.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="form">
+
+            <h2>Sign in</h2>
+            <div class="inputBox">
+                <input id="userName" type="text" required="required">
+                <span>Username</span>
+                <i></i>
+            </div>
+
+            <div class="inputBox">
+                <input id="password" type="text" required="required">
+                <span>Password</span>
+                <i></i>
+            </div>
+
+            <div class="links">
+                <a href="#">Forgot password ?</a>
+                <a href="signup.html">Sign up</a>
+            </div>
+            <input onclick="mySubmit()" type="submit" value="Log In">
+            <div class="signWith">
+                <h5>Sign in with</h5>
+                <p>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.google.com"><i class="fab fa-google"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classify</title>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="classify.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2dc88ddb59.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div>
+                    <h3 class="common-font">Gender Detection</h3>
+                </div>
+                <div>
+                    <ul>
+                        <li class="common-font"><a href="Home.html">Home</a></li>
+                        <li class="common-font"><a href="classify.html">Classify</a></li>
+                        <li class="common-font"><a href="blog.html">Blogs</a></li>
+                        <li class="common-font"><a href="logIn.html">Log
+                                Out</a></li>
+                        <li><i class="fas fa-search"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="box">
+            <div class="wrapper">
+                <div class="image">
+                    <img>
+                </div>
+                <div class="content">
+                    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <div class="text">No file choosen!!</div>
+                </div>
+                <div id="cancel-btn"><i class="fas fa-times"></i></div>
+                <div class="file-name">File name here</div>
+            </div>
+            <input class="button" id="default-btn" type="file" hidden>
+            <button onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
+            <button class="button" id="predict-btn">Predict</button>
+        </div>
+
+        <div class="commentPart">
+            <h2>Comment here..</h2>
+            <div id="comment-container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse animi atque delectus assumenda sint,
+                    fuga
+                    voluptatum nisi hic earum, dignissimos iste minus numquam dolorem magnam eveniet nesciunt omnis
+                    tempore
+                    provident. Asperiores architecto aperiam nobis voluptatum ad, eveniet est vitae et nulla. Velit
+                    vitae ex
+                    nulla ullam, et facilis impedit provident.</p>
+                <p>Inventore saepe, facere velit fuga quos, dolorem ea ex at cum fugiat eaque laboriosam libero, tempora
+                    doloribus voluptatem quas quam ad accusamus esse. Expedita totam reprehenderit molestias deserunt
+                    eaque ut
+                    quaerat laborum, dolorem, doloremque porro explicabo, cupiditate quidem dolores aperiam recusandae
+                    debitis.
+                    Minima magni assumenda tempora maiores voluptas molestias debitis?</p>
+
+            </div>
+            <div>
+                <textarea name="" id="comment" cols="50" rows="4"></textarea>
+                <br>
+                <button id="post">Comment</button>
+            </div>
+
+        </div>
+
+        <!-- bonus part2 -->
+        <h2 class="common-font mt-5 pt-5 text-center">Happy clients says</h2>
+        <hr class="hr-style">
+        <section class="container">
+            <div class="row gx-5">
+                <div class="col-lg-3 col-sm-6 shadow p-5 m-5 bg-body rounded">
+
+
+                    <p class="text-center">Slate helps you see how
+                        many more days you need
+                        to work to reach your financial
+                        goal for the month and year.</p>
+
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <img src="images/person 1.png" alt="">
+                            <h6 class="common-font text-center fw-bold mt-3">Regina Miles</h6>
+                            <p class="text-center">Researcher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 shadow p-5 m-5 bg-body rounded">
+                    <p class="text-center">Slate helps you see how
+                        many more days you need
+                        to work to reach your financial
+                        goal for the month and year.</p>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <img src="images/person 2.png" alt="">
+                            <h6 class="common-font text-center fw-bold mt-3">Regina Miles</h6>
+                            <p class="text-center">Researcher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 shadow p-5 m-5 bg-body rounded">
+                    <p class="text-center">Slate helps you see how
+                        many more days you need
+                        to work to reach your financial
+                        goal for the month and year.</p>
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <img src="images/person 3.png" alt="">
+                            <h6 class="common-font text-center fw-bold mt-3">Regina Miles</h6>
+                            <p class="text-center">Researcher</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="parent">
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="Home.html">1</a>
+                <a href="classify.html">2</a>
+                <a href="blog.html">3</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer tags -->
+    <footer>
+        <div>
+            <h2>Gender Detection</h2>
+            <p>copyright © 2020 plant dieases detection</p>
+            <p>All rights reserved</p>
+            <p><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter"></i> <i
+                    class="fab fa-youtube"></i></p>
+        </div>
+    </footer>
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const wrapper = document.querySelector(".wrapper");
+        const fileName = document.querySelector(".file-name");
+        const cancelBtn = document.querySelector("#cancel-btn");
+        const defaultBtn = document.querySelector("#default-btn");
+        const customBtn = document.querySelector("#custom-btn");
+        const img = document.querySelector("img");
+        let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
+
+        function defaultBtnActive() {
+            defaultBtn.click();
+        }
+        defaultBtn.addEventListener("change", function () {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function () {
+                    const result = reader.result;
+                    img.src = result;
+                    wrapper.classList.add("active");
+                }
+                cancelBtn, addEventListener("click", function () {
+                    img.src = "";
+                    wrapper.classList.remove("active");
+                });
+                reader.readAsDataURL(file);
+            }
+            if (this.value) {
+                let valueStore = this.value.match(regExp);
+                fileName.textContent = valueStore;
+            }
+        });
+
+        window.onload = (event) => {
+            let myAlert = document.querySelector('.toast');
+            let bsAlert = new bootstrap.Toast(myAlert);
+            bsAlert.show();
+        }
+
+
+
+        //1. add event handler
+        // document.getElementById('post-comment').addEventListener('click', function () {
+        //     //2. get user comment
+        //     const newComment = document.getElementById('comment');
+        //     //console.log(newComment.value);
+        //     //3. create new paragraph
+        //     const p = document.createElement('p');
+        //     p.innerText = newComment.value;
+        //     //4.append comment
+        //     document.getElementById('comment-container').append(p);
+
+        //     //5. clear the comment box
+        //     newComment.value = '';
+
+        // })
+        document.getElementById('post').addEventListener('click', function () {
+            const newComment = document.getElementById('comment');
+            const p = document.createElement('p');
+            p.innerText = newComment.value;
+            document.getElementById('comment-container').append(p);
+            newComment.value = '';
+        })
+
+    </script>
+</body>
+
+</html>

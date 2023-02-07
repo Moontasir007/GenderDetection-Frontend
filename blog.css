@@ -1,0 +1,121 @@
+.container {
+    margin: 2% 5% 5% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -----------------
+     common style 
+------------------- */
+.common-font {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Russo One', sans-serif;
+}
+
+
+/*------------------
+   navigation style 
+------------------- */
+nav {
+    background-color: cadetblue;
+    overflow: hidden;
+    height: 90px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+nav li {
+    padding: 15px;
+
+}
+
+nav li:hover {
+    background-color: black;
+}
+
+nav li:hover a {
+    color: white;
+}
+
+nav li:hover .fas {
+    color: white;
+}
+
+/*------mapping-----*/
+.map {
+    margin: auto;
+    width: 40%;
+    border: 1px dashed rgb(117, 171, 117);
+}
+
+.center {
+    text-align: center;
+    margin: 3%;
+}
+
+/*---------------
+   pagination
+---------------*/
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination {
+    display: inline-block;
+    align-items: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*---------
+   footer 
+----------- */
+footer {
+    background-color: cadetblue;
+    height: 200px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+
+footer h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
