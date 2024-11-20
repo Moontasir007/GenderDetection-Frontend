@@ -13,7 +13,7 @@ CSS: Enhancing the visual appeal and responsiveness.
 ## Getting Started
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-repository-link
+git clone [https://github.com/your-repository-link](https://github.com/Moontasir007/GenderDetection-Frontend)
 ```
 2. Open `index.html` in your preferred browser.
 
