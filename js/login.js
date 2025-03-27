@@ -3,7 +3,7 @@ function mySubmit() {
     const Password = document.getElementById("password").value;
 
     if (UserName == 'Mamun' && Password == '12345') {
-        window.location.href = 'Home.html';
+        window.location.href = 'index.html';
     }
 
 }
